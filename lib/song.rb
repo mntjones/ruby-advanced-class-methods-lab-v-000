@@ -41,6 +41,7 @@ class Song
   end
   
   def self.alphabetical
-    @@all.sort_by{ |word| word[0]}
+    puts @@all
+    @@all.sort_by{ |title| title[0]}
   end
 end
