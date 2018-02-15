@@ -45,6 +45,7 @@ class Song
     @@all.each do |title|
       names << title.name
     end
+    puts names
     names.sort_by{ |title| title[0]}
   end
 end
