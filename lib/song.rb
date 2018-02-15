@@ -41,7 +41,10 @@ class Song
   end
   
   def self.alphabetical
-    puts @@all
-    @@all.sort_by{ |title| title[0]}
+    names = []
+    @@all.each do |title|
+      names << title.name
+    end
+    names.sort_by{ |title| title[0]}
   end
 end
