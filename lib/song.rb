@@ -44,5 +44,7 @@ class Song
     @@all.sort_by {|title| title.name}
   end
   
-  
+  def self.new_from_filename(file)
+    file_parse = file.
+  end
 end
